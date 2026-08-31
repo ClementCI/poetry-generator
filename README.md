@@ -1,40 +1,35 @@
-
-
 # Poetry Generator: Comparative Analysis of Neural Architectures
 
-
-## Table of Contents
-1. [Description](#description)  
-2. [Key Results](#key-results)  
-3. [Features](#features)  
-4. [Dataset](#dataset)  
-5. [Files Structure](#files-structure)  
-6. [Methodology](#methodology)  
-    1. [Preprocessing](#1-preprocessing)  
-    2. [Training](#2-training)  
-    3. [Evaluation](#3-evaluation)  
-    4. [Generation](#4-generation)  
-7. [Experiments](#experiments)  
-	1. [Experimental Setup](#1-experimental-setup)  
-    2. [Model Configurations](#2-model-configurations)  
-8. [Results and Discussion](#results-and-discussion)  
-    1. [Character-Level Tokenizer](#1-character-level-tokenizer)  
-    2. [Byte-Pair Encoding Tokenizer](#2-byte-pair-encoding-tokenizer)  
-    3. [Pretrained GPT-2](#3-pretrained-gpt-2)
-9. [Installation](#installation)
-10. [Usage](#usage)  
-    1. [Train a Model](#1-train-a-model)  
-    2. [Evaluate Model Performance](#2-evaluate-model-performance)  
-    3. [Generate Poems](#3-generate-poems)  
-
-
-
 ## Description
-This project investigates **automatic poetry generation** through both **custom-built neural architectures** (RNN, LSTM, GPT) and **pretrained language models** (GPT-2). The models are trained on _Emily Dickinson’s_ _“Poems: Three Series, Complete”_ and evaluated using a combination of **linguistic**, **structural**, and **semantic** metrics to assess poetic quality and coherence.
+A text generation system investigating **automatic poetry generation** through both **custom-built neural architectures** (RNN, LSTM, GPT) and **pretrained language models** (GPT-2). The models are trained on _Emily Dickinson’s_ _“Poems: Three Series, Complete”_ and evaluated using a combination of **linguistic**, **structural**, and **semantic** metrics to assess poetic quality and coherence.
 
 The primary objective is to examine how variations in **architecture design** and **tokenization strategy** (character-level, BPE, and GPT-2) influence a model’s capacity to capture the **rhythm, style, and structure** characteristic of poetic language.
 
 The final outcome is a **fully automated pipeline for training, generating, and evaluating poetry** under diverse configurations, providing a foundation for systematic experimentation in computational creativity.
+
+## Table of Contents
+1. [Key Results](#key-results)  
+2. [Features](#features)  
+3. [Dataset](#dataset)  
+4. [Files Structure](#files-structure)  
+5. [Methodology](#methodology)  
+    1. [Preprocessing](#1-preprocessing)  
+    2. [Training](#2-training)  
+    3. [Evaluation](#3-evaluation)  
+    4. [Generation](#4-generation)  
+6. [Experiments](#experiments)  
+	1. [Experimental Setup](#1-experimental-setup)  
+    2. [Model Configurations](#2-model-configurations)  
+7. [Results and Discussion](#results-and-discussion)  
+    1. [Character-Level Tokenizer](#1-character-level-tokenizer)  
+    2. [Byte-Pair Encoding Tokenizer](#2-byte-pair-encoding-tokenizer)  
+    3. [Pretrained GPT-2](#3-pretrained-gpt-2)
+8. [Installation](#installation)
+9. [Usage](#usage)  
+    1. [Train a Model](#1-train-a-model)  
+    2. [Evaluate Model Performance](#2-evaluate-model-performance)  
+    3. [Generate Poems](#3-generate-poems)  
+
 
 ## Key Results
 
